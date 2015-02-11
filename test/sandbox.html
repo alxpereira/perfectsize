@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Perfect Size Test</title>
+	<script src="../min/perfectsize.min.js"></script>
+
+	<style>
+		#container{
+			background: blue;
+			width:100%;
+			height:800px;
+			border:solid 1px white;
+		}
+
+		#container .box{
+			float:left;
+			border: solid 1 white;
+		}
+
+		#container .box.size25{
+			width: 25%;
+			background : red;
+			height: 100px;
+		}
+
+		#container .box.size50{
+			width: 50%;
+			background : green;
+			height: 200px;
+		}
+
+		#container .box.size50x2{
+			width: 50%;
+			background : green;
+			height: 240px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container" class="testgroup">
+		<div class="box size25"></div>
+		<div class="box size50"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size50x2"></div>
+		<div class="box size50"></div>
+	</div>
+
+	<div id="container" class="testgroup">
+		<div class="box size25"></div>
+		<div class="box size50"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size25"></div>
+		<div class="box size50"></div>
+		<div class="box size50"></div>
+	</div>
+
+	<script>
+		perfectsize.init({ byline: true, selector : '.testgroup' })
+	</script>
+</body>
+
+</html>

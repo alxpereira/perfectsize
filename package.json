@@ -1,0 +1,17 @@
+{
+  "name": "perfectsize",
+  "version": "1.0.0",
+  "description": "Lightweight HTML Equalizer",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alexandre Pereira <alex[at]idenproject.com>",
+  "license": "WTFPL",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-uglify": "^0.7.0",
+    "jshint-stylish": "^1.0.0"
+  }
+}
